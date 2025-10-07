@@ -1,0 +1,41 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "PowerShell: Current File (choose preset or type)",
+      "type": "PowerShell",
+      "request": "launch",
+      "script": "${file}",
+      "cwd": "${fileDirname}",
+      "args": [
+        "${input:argPresetOrCustom}"
+      ]
+    },
+    {
+      "name": "PowerShell Interactive Session",
+      "type": "PowerShell",
+      "request": "launch",
+      "cwd": ""
+    }
+  ],
+  "inputs": [
+    {
+      "id": "argPresetOrCustom",
+      "type": "pickString",
+      "description": "Choose a preset, or select Custom to type arguments",
+      "options": [
+        "-ProfileQTY 5 -Variance 2 -BasePath D:\\\\ProfilesTest1\\\\ -DryRun",
+        "-ProfileQTY 10 -Variance 5 -BasePath D:\\\\ProfilesTest1\\\\",
+        "-ProfileQTY 20 -Variance 10 -BasePath D:\\\\ProfilesTest2\\\\",
+        "${input:customArgs}"
+      ],
+      "default": "${input:customArgs}"
+    },
+    {
+      "id": "customArgs",
+      "type": "promptString",
+      "description": "Enter PowerShell script arguments (e.g. -ProfileQTY 10 -Variance 5 -BasePath D:\\\\ProfilesTest1\\\\ -DryRun)",
+      "default": ""
+    }
+  ]
+}
