@@ -130,4 +130,4 @@ The script prints a manifest table at completion showing:
 ---
 
 © 2025 — *Make-FakeProfiles PowerShell utility*  
-Created by Steve Szuster & Stan (AI co-dev).
+Created by Steve Szuster
