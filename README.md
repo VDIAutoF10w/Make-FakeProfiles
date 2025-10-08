@@ -1,7 +1,7 @@
 # Make-FakeProfiles v1.1
 
 A PowerShell 5 script that generates **realistic fake Windows user profiles** for testing cleanup, migration, or archival tools.  
-Originally designed as a synthetic data generator for validating [TidyUpCat](../TidyUpCat) behavior.
+Originally designed as a synthetic data generator for validating [TidyUpCat](https://github.com/VDIAutoF10w/TidyUpCat) behavior.
 
 ---
 
